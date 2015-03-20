@@ -18,7 +18,7 @@ class Mortadella
 
 
   # Adds the given row to the table
-  def add_row row
+  def << row
     @table << dry_up(row)
     @previous_row = row
   end
