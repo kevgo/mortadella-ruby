@@ -1,34 +1,25 @@
-# Mortadella
+# Delicious Mock Ruby Tables
 
-Mock Ruby Table Delivery
+_A library to create mock tables for Cucumber_
+
+Mortadella makes it easy to programmatically build data tables
+that can be compared to Cucumber tables
+through `cucumber_table.diff! mortadella_table`.
+
+You want to do this as much as possible,
+because Cucumber has very powerful built-in facilities
+to display where and how your actual data is different from the expected data.
 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'mortadella'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mortadella
+* add `gem 'mortadella'` to your `Gemfile`
+* run `bundle`
 
 
 ## Usage
 
-* see
+* [basic usage](https://github.com/Originate/mortadella/blob/master/features/mortadella.feature)
+* you can also [dry up repetitive fields]() for better readability
+       This leads to more readable tables.
 
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/mortadella/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
