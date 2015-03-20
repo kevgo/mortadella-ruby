@@ -1,5 +1,8 @@
 # Delicious Mock Ruby Tables
 
+[![Build Status](https://circleci.com/gh/Originate/mortadella/tree/master.svg?style=shield)](https://circleci.com/gh/Originate/mortadella)
+[![License](http://img.shields.io/:license-MIT-blue.svg?style=flat)](LICENSE)
+
 Mortadella makes it easy to programmatically build data tables
 that can be compared to Cucumber tables
 through `cucumber_table.diff! mortadella_table`.
