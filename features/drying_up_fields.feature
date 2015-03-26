@@ -6,7 +6,7 @@ Feature: Drying up repetitive fields
 
 
   Scenario: drying up repetitive columns
-    Given I create a Mortadella instance with a DRY column:     "m = Mortadella.new headers: ['DAY', 'ACTIVITY'], dry: ['DAY']"
+    Given A Mortadella instance with a DRY column :  "m = Mortadella.new headers: ['DAY', 'ACTIVITY'], dry: ['DAY']"
 
     And I add an activity for Monday:        "m << ['Monday', 'mowing']"
     And I add another activity for Monday:   "m << ['Monday', 'musing']"
