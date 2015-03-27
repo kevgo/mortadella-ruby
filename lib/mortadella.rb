@@ -42,4 +42,8 @@ class Mortadella
     result
   end
 
+
+  def empty?
+    @table.size == 1
+  end
 end
