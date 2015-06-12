@@ -1,6 +1,5 @@
 # Makes it easy to build DRY Cucumber-compatible tables
 class Mortadella
-
   attr_reader :table
 
 
