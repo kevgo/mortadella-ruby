@@ -45,3 +45,14 @@ _Oh no, our algorithm selected too many apples!_
   ```
 
 * you can also [dry up repetitive fields](https://github.com/Originate/mortadella/blob/master/features/drying_up_fields.feature) for better readability
+
+
+## Development
+
+* set up local environment: `bundle install`
+* run all tests: `bundle exec rake`
+  * run linter only: `rake lint`
+  * run tests only: `rake features`
+* publish a new gem:
+  * update the version in [mortadella.gemspec](mortadella.gemspec)
+  * `rake release`
