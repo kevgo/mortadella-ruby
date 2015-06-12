@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.files         = `git ls-files -z`.split("\x0")
   s.test_files    = Dir['features/*']
-  s.require_paths = ['lib']
+  s.require_paths = ['.']
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'cucumber'
