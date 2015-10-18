@@ -1,3 +1,13 @@
+AllCops:
+
+  DisplayCopNames: true
+
+  DisplayStyleGuide: true
+
+  Include:
+    - '**/Rakefile'
+
+
 Lint/Eval:
   Enabled: false
 
