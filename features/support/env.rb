@@ -1,3 +1,4 @@
 require 'bundler/setup'
 Bundler.setup
-require 'mortadella'
+require 'mortadella/horizontal'
+require 'mortadella/vertical'
