@@ -26,6 +26,21 @@ module Mortadella
     end
 
 
+    def empty?
+      @table.size == 1
+    end
+
+
+
+  private
+
+
+    # Returns whether the column with the given name can be dried up
+    def can_dry? column_name
+      @dry.include? column_name
+    end
+
+
     # Returns a dried up version of the given row
     # based on the row that came before in the table
     #
@@ -33,21 +48,17 @@ module Mortadella
     # stopping on the first difference
     def dry_up row
       return row unless @previous_row
-      result = row.clone
-      @previous_row.each_with_index do |previous_value, i|
-        if @dry.include?(@headers[i]) && row[i] == previous_value
-          result[i] = ''
-        else
-          break
+      row.clone.tap do |result|
+        row.length.times do |i|
+          if can_dry?(@headers[i]) && row[i] == @previous_row[i]
+            result[i] = ''
+          else
+            break
+          end
         end
       end
-      result
     end
 
-
-    def empty?
-      @table.size == 1
-    end
 
   end
 
