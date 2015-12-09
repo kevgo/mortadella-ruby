@@ -2,7 +2,7 @@
 
 [![Build Status](https://circleci.com/gh/Originate/mortadella/tree/master.svg?style=shield)](https://circleci.com/gh/Originate/mortadella)
 [![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
-[![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=kg-coveralls&service=github)](https://coveralls.io/github/Originate/mortadella?branch=kg-coveralls)
+[![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 [![Dependency Status](https://gemnasium.com/Originate/mortadella.svg)](https://gemnasium.com/Originate/mortadella)
 [![License](http://img.shields.io/:license-MIT-blue.svg?style=flat)](LICENSE.txt)
 
