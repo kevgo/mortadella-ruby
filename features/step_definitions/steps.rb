@@ -4,8 +4,7 @@ end
 
 
 
-
-Then(/^I receive/) do |table|
+Then(/^Mortadella returns/) do |table|
   table.diff! @result
 end
 

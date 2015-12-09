@@ -6,7 +6,7 @@ Feature: Drying up repetitive fields
 
 
   Scenario: drying up repetitive columns
-    Given I have a Mortadella instance with a DRY column:  "m = Mortadella.new headers: ['DAY', 'ACTIVITY'], dry: ['DAY']"
+    Given I have a Mortadella instance with a DRY column:  "m = Mortadella::Horizontal.new headers: ['DAY', 'ACTIVITY'], dry: ['DAY']"
 
     And I add an activity for Monday:        "m << ['Monday', 'mowing']"
     And I add another activity for Monday:   "m << ['Monday', 'musing']"
@@ -17,7 +17,7 @@ Feature: Drying up repetitive fields
     And I add another activity for Tuesday:  "m << ['Tuesday', 'throwing']"
 
     When I request the instance data table   "m.table"
-    Then I receive a table with repeated day names cleared out for better readability
+    Then Mortadella returns a table with repeated day names cleared out for better readability
       | DAY     | ACTIVITY  |
       | Monday  | mowing    |
       |         | musing    |
