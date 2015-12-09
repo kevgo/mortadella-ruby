@@ -1,6 +1,6 @@
 module Mortadella
 
-  # Makes it easy to build DRY horizontal Cucumber-compatible tables
+  # Makes it easy to build DRY vertical Cucumber-compatible tables
   class Vertical
 
     attr_reader :table
@@ -18,7 +18,7 @@ module Mortadella
 
 
     def empty?
-      @table.size == 1
+      @table.empty?
     end
 
   end
