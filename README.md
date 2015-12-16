@@ -4,7 +4,6 @@
 [![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 [![Dependency Status](https://gemnasium.com/Originate/mortadella.svg)](https://gemnasium.com/Originate/mortadella)
-[![Total Downloads](https://img.shields.io/gem/dt/mortadella.svg)]()
 
 
 Mortadella makes it easy to programmatically build data tables
