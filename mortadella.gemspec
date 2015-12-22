@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name          = 'mortadella'
-  s.version       = '0.2.2'
+  s.version       = '1.0.0'
   s.authors       = ['Kevin Goslar']
   s.email         = ['kevin.goslar@gmail.com']
   s.summary       = %s(Mock Ruby Table Delivery)
