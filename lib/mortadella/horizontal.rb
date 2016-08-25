@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Mortadella
 
   # Makes it easy to build DRY horizontal Cucumber-compatible tables
