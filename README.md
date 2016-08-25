@@ -58,6 +58,8 @@ Mortadella supports horizontal and vertical Cucumber tables.
   [dry up repetitive fields](https://github.com/Originate/mortadella/blob/master/features/horizontal_tables/drying_up_fields.feature)
   for better readability
 
+* or filter the columns of your finished table by calling [keep_matching_colums](features/horizontal_tables/keep_matching_columns.feature)
+
 
 ### Vertical Tables
 

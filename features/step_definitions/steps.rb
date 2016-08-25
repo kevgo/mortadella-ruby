@@ -1,7 +1,6 @@
-Given(/^I (?:add|ask|create|have|request) .+? "(.+?)"$/) do |code|
+Given(/^I (?:add|ask|create|filter|have|request) .+? "(.+?)"$/) do |code|
   @result = eval "@#{code}"
 end
-
 
 
 Then(/^Mortadella returns/) do |table|

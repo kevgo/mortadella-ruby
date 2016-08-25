@@ -31,6 +31,15 @@ module Mortadella
     end
 
 
+    def keep_matching_columns columns
+      columns_indeces_to_drop(columns).sort.reverse_each do |column_number|
+        @table.each do |row|
+          row.delete_at column_number
+        end
+      end
+    end
+
+
 
   private
 
@@ -38,6 +47,17 @@ module Mortadella
     # Returns whether the column with the given name can be dried up
     def can_dry? column_name
       @dry.include? column_name
+    end
+
+
+    # Returns the column indeces to drop to make this table have the given columns
+    def columns_indeces_to_drop columns
+      result = []
+      headers = @table[0]
+      headers.each_with_index do |header, i|
+        result << i unless columns.include? header
+      end
+      result
     end
 
 
