@@ -1,4 +1,5 @@
-# Delicious Mock Ruby Tables
+<img src="documentation/logo.png" width="675" height="100" alt="logo">
+<hr>
 
 [![Build Status](https://circleci.com/gh/Originate/mortadella/tree/master.svg?style=shield)](https://circleci.com/gh/Originate/mortadella)
 [![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
