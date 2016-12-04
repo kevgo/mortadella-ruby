@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name          = 'mortadella'
-  s.version       = '0.2.1'
+  s.version       = '1.1.0'
   s.authors       = ['Kevin Goslar']
   s.email         = ['kevin.goslar@gmail.com']
   s.summary       = %s(Mock Ruby Table Delivery)
@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['.']
 
   s.add_development_dependency 'bundler'
+  s.add_development_dependency 'coveralls'
   s.add_development_dependency 'cucumber'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rubocop'
