@@ -4,13 +4,12 @@
 [![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 
-Mortadella makes it easy to programmatically build data tables
-that can be compared to Cucumber tables
-through `cucumber_table.diff! mortadella_table` in Ruby.
+Mortadella makes it easy to programmatically build data tables that can be
+compared to Cucumber tables through `cucumber_table.diff! mortadella_table` in
+Ruby.
 
-You want to do this as much as possible.
-Cucumber for Ruby has very powerful built-in facilities
-to visualize where and how two tables differ:
+You want to do this as much as possible. Cucumber for Ruby has very powerful
+built-in facilities to visualize where and how two tables differ:
 
 <img src="https://raw.githubusercontent.com/kevgo/mortadella/master/documentation/ingredients.png" width="292" height="139">
 <i>Oh no, our algorithm selected too many apples!</i>
@@ -36,8 +35,8 @@ Mortadella supports horizontal and vertical Cucumber tables.
     | apples     | 3 pc   |
   ```
 
-- in the step definition for this, build an equivalent Mortadella table with the actual data,
-  and diff the Cucumber table with the expected data against it.
+- in the step definition for this, build an equivalent Mortadella table with the
+  actual data, and diff the Cucumber table with the expected data against it.
 
   ```ruby
   Then /^I have these ingredients$/ do |expected_ingredients|
@@ -67,8 +66,8 @@ Mortadella supports horizontal and vertical Cucumber tables.
     | CALORIES | 500   |
   ```
 
-- in the step definition for this, build an equivalent Mortadella table with the actual data,
-  and diff the Cucumber table with the expected data against it.
+- in the step definition for this, build an equivalent Mortadella table with the
+  actual data, and diff the Cucumber table with the expected data against it.
 
   ```ruby
   Then /^My pie has these metrics:$/ do |expected_metrics|
