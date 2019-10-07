@@ -1,15 +1,31 @@
-Lint/Eval:
-  Enabled: false
+AllCops:
+  DisplayCopNames: true
 
+  DisplayStyleGuide: true
+
+  Include:
+    - "**/Rakefile"
+
+Security/Eval:
+  Enabled: false
 
 Metrics/LineLength:
   Max: 100
 
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
 
-Style/EmptyLines:
+Layout/EmptyLines:
   Enabled: false
 
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+
+Style/GuardClause:
+  Enabled: false
 
 Style/MethodDefParentheses:
   EnforcedStyle: require_no_parentheses
-

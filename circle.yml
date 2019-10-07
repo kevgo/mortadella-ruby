@@ -1,4 +1,8 @@
 test:
-  override:
-    - bundle exec rake
 
+  pre:
+    - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
+
+  override:
+    - bin/lint
+    - bin/features --format pretty --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber
