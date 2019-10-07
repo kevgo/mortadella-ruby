@@ -1,12 +1,12 @@
-# Mortadella
+# Mortadella for Ruby
 
 [![Build Status](https://circleci.com/gh/kevgo/mortadella/tree/master.svg?style=shield)](https://circleci.com/gh/kevgo/mortadella)
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 [![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
 
-Mortadella makes it easy to programmatically build data tables that can be
-compared to Cucumber tables through `cucumber_table.diff! mortadella_table` in
-Ruby.
+Mortadella for Ruby makes it easy to programmatically build data tables that can
+be compared to [Cucumber for Ruby](https://github.com/cucumber/cucumber-ruby)
+tables through `cucumber_table.diff! mortadella_table`.
 
 You want to do this as much as possible. Cucumber for Ruby has very powerful
 built-in facilities to visualize where and how two tables differ:
