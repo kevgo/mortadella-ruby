@@ -1,0 +1,18 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6.4
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - mortadella-{{ checksum "Gemfile.lock" }}
+            - mortadella-
+      - run: bundle install
+      - save_cache:
+          key: mortadella-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run: make test
