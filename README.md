@@ -83,9 +83,9 @@ Mortadella supports horizontal and vertical Cucumber tables.
 ## Development
 
 - set up local environment: `bundle install`
-- run all tests: `bundle exec rake`
-  - run linter only: `rake lint`
-  - run tests only: `rake features`
+- run all tests: `make test`
+  - run linter only: `make lint`
+  - run tests only: `make features`
 - publish a new gem:
   - update the version in [mortadella.gemspec](mortadella.gemspec)
   - `rake release`
