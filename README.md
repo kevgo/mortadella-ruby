@@ -12,7 +12,7 @@ You want to do this as much as possible.
 Cucumber has very powerful built-in facilities
 to visualize where and how two tables differ.
 
-<img src="http://blog.originate.com/mortadella/ingredients2.png" >
+<img src="https://raw.githubusercontent.com/kevgo/mortadella/master/documentation/ingredients.png" width="584" height="278">
 _Oh no, our algorithm selected too many apples!_
 
 ## Installation
