@@ -5,7 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 [![Dependency Status](https://gemnasium.com/Originate/mortadella.svg)](https://gemnasium.com/Originate/mortadella)
 
-
 Mortadella makes it easy to programmatically build data tables
 that can be compared to Cucumber tables
 through `cucumber_table.diff! mortadella_table`.
@@ -17,21 +16,18 @@ to visualize where and how two tables differ.
 <img src="http://blog.originate.com/mortadella/ingredients2.png" >
 _Oh no, our algorithm selected too many apples!_
 
-
 ## Installation
 
-* add `gem 'mortadella'` to your `Gemfile`
-* run `bundle`
-
+- add `gem 'mortadella'` to your `Gemfile`
+- run `bundle`
 
 ## Usage
 
 Mortadella supports horizontal and vertical Cucumber tables.
 
-
 ### Horizontal Tables
 
-* In your cucumber spec, define the expected data in table form
+- In your cucumber spec, define the expected data in table form
 
   ```cucumber
   Then I have these ingredients
@@ -41,7 +37,7 @@ Mortadella supports horizontal and vertical Cucumber tables.
     | apples     | 3 pc   |
   ```
 
-* in the step definition for this, build an equivalent Mortadella table with the actual data,
+- in the step definition for this, build an equivalent Mortadella table with the actual data,
   and diff the Cucumber table with the expected data against it.
 
   ```ruby
@@ -54,17 +50,16 @@ Mortadella supports horizontal and vertical Cucumber tables.
   end
   ```
 
-* you can also
+- you can also
   [dry up repetitive fields](https://github.com/Originate/mortadella/blob/master/features/horizontal_tables/drying_up_fields.feature)
   for better readability
 
-* or filter the columns of your finished table by calling
+- or filter the columns of your finished table by calling
   [keep_matching_colums](features/horizontal_tables/keep_matching_columns.feature)
-
 
 ### Vertical Tables
 
-* In your cucumber spec, define the expected data in table form
+- In your cucumber spec, define the expected data in table form
 
   ```cucumber
   Then my pie conforms to these specs:
@@ -73,7 +68,7 @@ Mortadella supports horizontal and vertical Cucumber tables.
     | CALORIES | 500   |
   ```
 
-* in the step definition for this, build an equivalent Mortadella table with the actual data,
+- in the step definition for this, build an equivalent Mortadella table with the actual data,
   and diff the Cucumber table with the expected data against it.
 
   ```ruby
@@ -86,13 +81,12 @@ Mortadella supports horizontal and vertical Cucumber tables.
   end
   ```
 
-
 ## Development
 
-* set up local environment: `bundle install`
-* run all tests: `bundle exec rake`
-  * run linter only: `rake lint`
-  * run tests only: `rake features`
-* publish a new gem:
-  * update the version in [mortadella.gemspec](mortadella.gemspec)
-  * `rake release`
+- set up local environment: `bundle install`
+- run all tests: `bundle exec rake`
+  - run linter only: `rake lint`
+  - run tests only: `rake features`
+- publish a new gem:
+  - update the version in [mortadella.gemspec](mortadella.gemspec)
+  - `rake release`
