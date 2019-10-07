@@ -12,8 +12,8 @@ You want to do this as much as possible.
 Cucumber has very powerful built-in facilities
 to visualize where and how two tables differ.
 
-<img src="https://raw.githubusercontent.com/kevgo/mortadella/master/documentation/ingredients.png" width="584" height="278">
-_Oh no, our algorithm selected too many apples!_
+<img src="https://raw.githubusercontent.com/kevgo/mortadella/master/documentation/ingredients.png" width="292" height="139">
+<i>Oh no, our algorithm selected too many apples!</i>
 
 ## Installation
 
