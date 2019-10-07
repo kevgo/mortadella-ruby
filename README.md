@@ -6,11 +6,11 @@
 
 Mortadella makes it easy to programmatically build data tables
 that can be compared to Cucumber tables
-through `cucumber_table.diff! mortadella_table`.
+through `cucumber_table.diff! mortadella_table` in Ruby.
 
 You want to do this as much as possible.
-Cucumber has very powerful built-in facilities
-to visualize where and how two tables differ.
+Cucumber for Ruby has very powerful built-in facilities
+to visualize where and how two tables differ:
 
 <img src="https://raw.githubusercontent.com/kevgo/mortadella/master/documentation/ingredients.png" width="292" height="139">
 <i>Oh no, our algorithm selected too many apples!</i>
@@ -18,7 +18,7 @@ to visualize where and how two tables differ.
 ## Installation
 
 - add `gem 'mortadella'` to your `Gemfile`
-- run `bundle`
+- run `bundle install`
 
 ## Usage
 
