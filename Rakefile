@@ -11,7 +11,7 @@ task default: [:lint, :features]
 desc "Fix all auto-fixable issues"
 task "fix" do
   sh "bundle exec rubocop -A"
-  sh "bundle exec rubocop -A mortadella.gemspec"
+  sh "bundle exec rubocop -A mortadella.gemspec Rakefile"
   sh "dprint fmt"
 end
 
