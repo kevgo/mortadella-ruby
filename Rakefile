@@ -11,12 +11,13 @@ task default: [:lint, :features]
 desc "Fix all auto-fixable issues"
 task "fix" do
   sh "bundle exec rubocop -A"
-  sh "bundle exec rubocop -A mortadella.gemspec Rakefile"
+  sh "bundle exec rubocop -A mortadella.gemspec Rakefile Gemfile"
   sh "dprint fmt"
 end
 
 desc "Run linters"
 task "lint" do
   sh "bundle exec rubocop"
+  sh "bundle exec rubocop mortadella.gemspec Rakefile"
   sh "dprint check"
 end
