@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
@@ -15,10 +14,4 @@ Gem::Specification.new do |s|
   s.files         = `git ls-files -z`.split("\x0")
   s.test_files    = Dir['features/*']
   s.require_paths = ['lib']
-
-  s.add_development_dependency 'bundler'
-  s.add_development_dependency 'coveralls'
-  s.add_development_dependency 'cucumber'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'rspec'
 end
