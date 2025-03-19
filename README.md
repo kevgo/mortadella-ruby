@@ -1,5 +1,6 @@
 # Mortadella for Ruby
 
+[![CI](https://github.com/kevgo/mortadella-ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/kevgo/mortadella-ruby/actions/workflows/ruby.yml)
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
 
 Mortadella for Ruby makes it easy to programmatically build data tables that can
