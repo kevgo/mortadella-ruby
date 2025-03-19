@@ -1,7 +1,7 @@
 # Mortadella for Ruby
 
 [![CI](https://github.com/kevgo/mortadella-ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/kevgo/mortadella-ruby/actions/workflows/ruby.yml)
-[![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
+[![Coverage Status](https://coveralls.io/repos/kevgo/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/kevgo/mortadella?branch=master)
 
 Mortadella for Ruby makes it easy to programmatically build data tables that can
 be compared to [Cucumber for Ruby](https://github.com/cucumber/cucumber-ruby)
@@ -48,7 +48,7 @@ Mortadella supports horizontal and vertical Cucumber tables.
   ```
 
 - you can also
-  [dry up repetitive fields](https://github.com/Originate/mortadella/blob/master/features/horizontal_tables/drying_up_fields.feature)
+  [dry up repetitive fields](https://github.com/kevgo/mortadella/blob/master/features/horizontal_tables/drying_up_fields.feature)
   for better readability
 
 - or filter the columns of your finished table by calling

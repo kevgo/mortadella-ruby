@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email         = ["kevin.goslar@gmail.com"]
   s.summary       = "Mock Ruby Table Delivery"
   s.description   = "A tool to create Ruby table object to be used for Cucumber comparisons"
-  s.homepage      = "https://github.com/Originate/mortadella"
+  s.homepage      = "https://github.com/kevgo/mortadella-ruby"
   s.license       = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0")
