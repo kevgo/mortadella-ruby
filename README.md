@@ -1,8 +1,6 @@
 # Mortadella for Ruby
 
-[![Build Status](https://circleci.com/gh/kevgo/mortadella-ruby/tree/master.svg?style=shield)](https://circleci.com/gh/kevgo/mortadella-ruby)
 [![Coverage Status](https://coveralls.io/repos/Originate/mortadella/badge.svg?branch=master&service=github)](https://coveralls.io/github/Originate/mortadella?branch=master)
-[![Code Climate](https://codeclimate.com/github/Originate/mortadella/badges/gpa.svg)](https://codeclimate.com/github/Originate/mortadella)
 
 Mortadella for Ruby makes it easy to programmatically build data tables that can
 be compared to [Cucumber for Ruby](https://github.com/cucumber/cucumber-ruby)
