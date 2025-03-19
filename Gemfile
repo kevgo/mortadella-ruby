@@ -1,11 +1,11 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 # Specify your gem's dependencies in mortadella.gemspec
 gemspec
 
-gem 'bundler'
-gem 'cucumber'
-gem 'logger'
-gem 'rake'
-gem 'rspec'
-gem 'rubocop'
+gem "bundler"
+gem "cucumber"
+gem "logger"
+gem "rake"
+gem "rspec"
+gem "rubocop"
