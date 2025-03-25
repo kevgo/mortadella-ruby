@@ -1,10 +1,8 @@
 # frozen_string_literal: true
 
-require 'mortadella/horizontal'
-require 'mortadella/vertical'
+require "mortadella/horizontal"
+require "mortadella/vertical"
 
-
-#:nodoc:
+# :nodoc:
 module Mortadella
-
 end
