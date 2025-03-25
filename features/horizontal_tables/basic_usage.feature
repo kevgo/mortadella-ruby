@@ -1,10 +1,5 @@
 Feature: Creating mock data tables
 
-  As a Cucumber user
-  I want to programmatically create horizontal mock data tables from application data
-  So that I can use Cucumber's built-in table diffing to verify my application data ergonomically.
-
-
   Scenario: Creating a simple data table
     Given I create a horizontal Mortadella instance: "m = Mortadella::Horizontal.new headers: ['DAY', 'ACTIVITY']"
     And I add a data row:                            "m << ['Monday', 'mowing']"
@@ -16,4 +11,3 @@ Feature: Creating mock data tables
       | Monday    | mowing    |
       | Tuesday   | tutoring  |
       | Wednesday | welcoming |
-

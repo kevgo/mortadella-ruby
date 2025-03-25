@@ -1,10 +1,5 @@
 Feature: Drying up repetitive fields
 
-  As a developer with a lot of repetitive data in my Cucumber tables
-  I want that redundant elements are omitted from my table
-  So that I can see better how data in my table is grouped and where it changes.
-
-
   Scenario: drying up repetitive columns
     Given I have a Mortadella instance with a DRY column:  "m = Mortadella::Horizontal.new headers: ['DAY', 'ACTIVITY'], dry: ['DAY']"
 
@@ -25,4 +20,3 @@ Feature: Drying up repetitive fields
       | Tuesday | typing    |
       |         | tutoring  |
       |         | throwing  |
-
