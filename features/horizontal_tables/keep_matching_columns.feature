@@ -1,12 +1,5 @@
 Feature: removing empty rows
 
-  As a Cucumber user
-  I want to be able to filter my Mortadella table against a list of header columns names
-  So that my Mortadella table matches the structure of the Cucumber table to compare against precisely and I don't get false negative tests.
-
-  - call "keep_matching_columns" with an array of column names to filter out all mismatching columns
-
-
   Scenario: filtering multiple columns
     Given I create a horizontal Mortadella instance: "m = Mortadella::Horizontal.new headers: ['DAY', 'ACTIVITY', 'HIGH-SCORE', 'AVERAGE']"
     And I add a data row:                            "m << ['Monday',    'mowing',    '1.0', '0.5']"
