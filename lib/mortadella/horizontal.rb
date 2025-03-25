@@ -1,13 +1,12 @@
 # frozen_string_literal: true
 
 module Mortadella
-  # Makes it easy to build DRY horizontal Cucumber-compatible tables
+  # Horizontal makes it easy to build horizontal Cucumber-compatible tables.
   class Horizontal
     attr_reader :table
 
     def initialize(headers:, dry: [])
       @headers = headers
-
       @dry = dry
 
       # The resulting Cucumber-compatible table structure
