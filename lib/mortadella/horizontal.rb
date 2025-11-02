@@ -17,10 +17,12 @@ module Mortadella
     end
 
     # Adds the given row to the table.
+    # Row data with the same number of elements as headers.
     def <<(row)
       validate_row_length!(row)
       @table << dry_up(row)
       @previous_row = row
+      self
     end
 
     # Indicates whether the table contains no data rows (only a header row).
@@ -35,6 +37,7 @@ module Mortadella
           row.delete_at column_index
         end
       end
+      self
     end
 
     private
@@ -58,15 +61,15 @@ module Mortadella
     # In a dried up row, any values that match the previous row are removed,
     # stopping on the first difference. Only columns marked as "dry" are affected.
     def dry_up(row)
-      return row unless @previous_row
+      return row.clone unless @previous_row
 
-      row.clone.tap do |result|
-        row.length.times do |i|
-          break unless can_dry?(@headers[i]) && row[i] == @previous_row[i]
+      result = row.clone
+      row.length.times do |i|
+        break unless can_dry?(@headers[i]) && row[i] == @previous_row[i]
 
-          result[i] = ""
-        end
+        result[i] = ""
       end
+      result
     end
 
     # Validates that the row has the correct number of elements.
