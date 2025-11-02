@@ -27,9 +27,9 @@ module Mortadella
     end
 
     def keep_matching_columns(columns)
-      column_indices_to_drop(columns).sort.reverse_each do |column_number|
+      column_indices_to_drop(columns).sort.reverse_each do |column_index|
         @table.each do |row|
-          row.delete_at column_number
+          row.delete_at column_index
         end
       end
     end
