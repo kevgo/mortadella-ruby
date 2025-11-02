@@ -2,8 +2,7 @@
   "markdown": {
     "textWrap": "always"
   },
-  "toml": {
-  },
+  "toml": {},
   "yaml": {},
   "excludes": [],
   "plugins": [
