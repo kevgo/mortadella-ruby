@@ -18,6 +18,7 @@ module Mortadella
 
     # Adds the given row to the table.
     def <<(row)
+      validate_row_length!(row)
       @table << dry_up(row)
       @previous_row = row
     end
@@ -66,6 +67,13 @@ module Mortadella
           result[i] = ""
         end
       end
+    end
+
+    # Validates that the row has the correct number of elements.
+    def validate_row_length!(row)
+      return if row.length == @headers.length
+
+      raise ArgumentError, "Row length (#{row.length}) doesn't match headers (#{@headers.length})"
     end
   end
 end
