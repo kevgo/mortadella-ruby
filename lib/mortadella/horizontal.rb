@@ -23,10 +23,12 @@ module Mortadella
       @previous_row = row
     end
 
+    # Indicates whether the table contains no data rows (only a header row).
     def empty?
       @table.size == 1
     end
 
+    # Filters the table to keep only the specified columns.
     def keep_matching_columns(columns)
       column_indices_to_drop(columns).sort.reverse_each do |column_index|
         @table.each do |row|
@@ -52,11 +54,9 @@ module Mortadella
       result
     end
 
-    # Returns a dried up version of the given row
-    # based on the row that came before in the table.
-    #
+    # Returns a dried up version of the given row based on the row that came before.
     # In a dried up row, any values that match the previous row are removed,
-    # stopping on the first difference
+    # stopping on the first difference. Only columns marked as "dry" are affected.
     def dry_up(row)
       return row unless @previous_row
 
