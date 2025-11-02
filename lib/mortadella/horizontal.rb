@@ -60,13 +60,13 @@ module Mortadella
     def dry_up(row)
       return row unless @previous_row
 
-      result = row.clone
-      row.length.times do |i|
-        break unless can_dry?(@headers[i]) && row[i] == @previous_row[i]
+      row.clone.tap do |result|
+        row.length.times do |i|
+          break unless can_dry?(@headers[i]) && row[i] == @previous_row[i]
 
-        result[i] = ""
+          result[i] = ""
+        end
       end
-      result
     end
 
     # Validates that the row has the correct number of elements.
