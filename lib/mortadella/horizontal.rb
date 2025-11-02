@@ -58,15 +58,15 @@ module Mortadella
     # In a dried up row, any values that match the previous row are removed,
     # stopping on the first difference. Only columns marked as "dry" are affected.
     def dry_up(row)
-      return row unless @previous_row
+      result = row.clone
+      return result unless @previous_row
 
-      row.clone.tap do |result|
-        row.length.times do |i|
-          break unless can_dry?(@headers[i]) && row[i] == @previous_row[i]
+      result.length.times do |i|
+        break unless can_dry?(@headers[i]) && result[i] == @previous_row[i]
 
-          result[i] = ""
-        end
+        result[i] = ""
       end
+      result
     end
 
     # Validates that the row has the correct number of elements.
