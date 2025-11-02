@@ -17,12 +17,10 @@ module Mortadella
     end
 
     # Adds the given row to the table.
-    # Row data with the same number of elements as headers.
     def <<(row)
       validate_row_length!(row)
       @table << dry_up(row)
       @previous_row = row
-      self
     end
 
     # Indicates whether the table contains no data rows (only a header row).
@@ -37,7 +35,6 @@ module Mortadella
           row.delete_at column_index
         end
       end
-      self
     end
 
     private
