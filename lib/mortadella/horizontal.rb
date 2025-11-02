@@ -9,14 +9,14 @@ module Mortadella
       @headers = headers
       @dry = dry
 
-      # The resulting Cucumber-compatible table structure
+      # The resulting Cucumber-compatible table structure.
       @table = [headers]
 
       # The previously added row
       @previous_row = nil
     end
 
-    # Adds the given row to the table
+    # Adds the given row to the table.
     def <<(row)
       @table << dry_up(row)
       @previous_row = row
@@ -36,12 +36,12 @@ module Mortadella
 
     private
 
-    # Returns whether the column with the given name can be dried up
+    # Returns whether the column with the given name can be dried up.
     def can_dry?(column_name)
       @dry.include? column_name
     end
 
-    # Returns the column indices to drop to make this table have the given columns
+    # Returns the column indices to drop to make this table have the given columns.
     def column_indices_to_drop(columns)
       result = []
       headers = @table[0]
@@ -52,7 +52,7 @@ module Mortadella
     end
 
     # Returns a dried up version of the given row
-    # based on the row that came before in the table
+    # based on the row that came before in the table.
     #
     # In a dried up row, any values that match the previous row are removed,
     # stopping on the first difference

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Mortadella
-  # Makes it easy to build DRY vertical Cucumber-compatible tables
+  # Makes it easy to build DRY vertical Cucumber-compatible tables.
   class Vertical
     attr_reader :table
 
@@ -9,7 +9,7 @@ module Mortadella
       @table = []
     end
 
-    # Adds the given row to the table
+    # Adds the given row to the table.
     def []=(header, row)
       @table << [header, row]
     end
