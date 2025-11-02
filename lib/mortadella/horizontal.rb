@@ -27,7 +27,7 @@ module Mortadella
     end
 
     def keep_matching_columns(columns)
-      columns_indeces_to_drop(columns).sort.reverse_each do |column_number|
+      columns_indices_to_drop(columns).sort.reverse_each do |column_number|
         @table.each do |row|
           row.delete_at column_number
         end
@@ -41,8 +41,8 @@ module Mortadella
       @dry.include? column_name
     end
 
-    # Returns the column indeces to drop to make this table have the given columns
-    def columns_indeces_to_drop(columns)
+    # Returns the column indices to drop to make this table have the given columns
+    def columns_indices_to_drop(columns)
       result = []
       headers = @table[0]
       headers.each_with_index do |header, i|
