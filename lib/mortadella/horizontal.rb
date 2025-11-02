@@ -70,7 +70,6 @@ module Mortadella
     end
 
     # Validates that the row has the correct number of elements.
-    # Raises ArgumentError if row length doesn't match headers.
     def validate_row_length!(row)
       return if row.length == @headers.length
 
