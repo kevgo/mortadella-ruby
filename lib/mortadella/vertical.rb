@@ -3,7 +3,7 @@
 module Mortadella
   # Makes it easy to build DRY vertical Cucumber-compatible tables.
   class Vertical
-    # @return [Array<(String, Array<String>)>] The table structure as an array of [header, row] pairs.
+    # @return [Array<(String, Array<String>)>] The table as an array of [header, row] pairs.
     attr_reader :table
 
     # @return [void]
