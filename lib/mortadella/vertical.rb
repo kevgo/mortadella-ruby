@@ -1,25 +1,29 @@
 # frozen_string_literal: true
 
 module Mortadella
-  # Makes it easy to build DRY vertical Cucumber-compatible tables.
+  # Vertical makes it easy to build vertical Cucumber-compatible tables.
+  # Vertical tables display data as key-value pairs, with headers in the first column
+  # and corresponding values in the second column.
   class Vertical
-    # @return [Array<(String, Array<String>)>] The table as an array of [header, row] pairs.
+    # @return [Array<Array<String>>] The Cucumber-compatible table.
     attr_reader :table
 
+    # Creates a new empty vertical table.
     # @return [void]
     def initialize
       @table = []
     end
 
-    # Adds the given row to the table.
-    # @param header [String] The header for the row.
-    # @param row [String] The data field for the given header.
+    # Adds a new row to the table with the given header and value.
+    # @param header [String] The header (key) for the row.
+    # @param row [String] The data (value) for the given header.
     # @return [void]
     def []=(header, row)
       @table << [header, row]
     end
 
-    # @return [Boolean] Indicates whether this table is empty.
+    # Indicates whether the table contains no rows.
+    # @return [Boolean]
     def empty?
       @table.empty?
     end
