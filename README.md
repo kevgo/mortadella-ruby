@@ -49,7 +49,15 @@ Mortadella supports horizontal and vertical Cucumber tables.
 
 - you can also
   [dry up repetitive fields](https://github.com/kevgo/mortadella/blob/master/features/horizontal_tables/drying_up_fields.feature)
-  for better readability
+  for better readability:
+
+  ```cucumber
+  | DAY     | ACTIVITY |
+  | Monday  | mowing   |
+  |         | musing   |
+  | Tuesday | typing   |
+  |         | tutoring |
+  ```
 
 - or filter the columns of your finished table by calling
   [keep_matching_colums](features/horizontal_tables/keep_matching_columns.feature)
