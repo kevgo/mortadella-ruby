@@ -15,7 +15,11 @@ module Mortadella
     # @param header [String] The header for the row.
     # @param row [String] The data field for the given header.
     # @return [void]
+    # @raise [ArgumentError] If header or row is nil.
     def []=(header, row)
+      raise ArgumentError, "Header cannot be nil" if header.nil?
+      raise ArgumentError, "Row value cannot be nil" if row.nil?
+
       @table << [header, row]
     end
 
