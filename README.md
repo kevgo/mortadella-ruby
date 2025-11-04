@@ -60,7 +60,7 @@ Mortadella supports horizontal and vertical Cucumber tables.
   ```
 
 - or filter the columns of your finished table by calling
-  [keep_matching_colums](features/horizontal_tables/keep_matching_columns.feature)
+  [keep_matching_columns](features/horizontal_tables/keep_matching_columns.feature)
 
 ### Vertical Tables
 
@@ -86,12 +86,33 @@ Mortadella supports horizontal and vertical Cucumber tables.
   end
   ```
 
+## API Reference
+
+### Horizontal Tables
+
+- `new(headers:, dry: [])` - Create a new horizontal table with column headers
+- `<<(row)` - Add a row to the table
+- `empty?` - Check if the table has no data rows
+- `keep_matching_columns(columns)` - Filter table to only keep specified columns
+- `table` - Access the raw Cucumber-compatible table array
+
+### Vertical Tables
+
+- `new` - Create a new empty vertical table
+- `[key] = value` - Add a key-value pair to the table
+- `empty?` - Check if the table has no rows
+- `key?(header)` - Check if a header exists in the table
+- `to_h` - Convert the table to a Ruby hash
+- `table` - Access the raw Cucumber-compatible table array
+
 ## Development
 
 - set up local environment: `bundle install`
-- run all tests: `make test`
-  - run linter only: `make lint`
-  - run tests only: `make features`
+- run all tests: `rake` (or `rake default`)
+  - run linters: `rake lint`
+  - auto-fix all issues: `rake fix`
+  - run tests only: `rake features`
 - publish a new gem:
   - update the version in [mortadella.gemspec](mortadella.gemspec)
+  - update [CHANGELOG.md](CHANGELOG.md)
   - `rake release`
