@@ -5,10 +5,6 @@
   - run linters: `rake lint`
   - auto-fix all issues: `rake fix`
   - run tests only: `rake features`
-- publish a new gem:
-  - update the version in [mortadella.gemspec](mortadella.gemspec)
-  - update [CHANGELOG.md](CHANGELOG.md)
-  - `rake release`
 
 ## Release a new version to RubyGems
 
