@@ -8,13 +8,21 @@ Gem::Specification.new do |s|
   s.version       = "1.1.0"
   s.authors       = ["Kevin Goslar"]
   s.email         = ["kevin.goslar@gmail.com"]
-  s.summary       = "Mock Ruby Table Delivery"
-  s.description   = "A tool to create Ruby table object to be used for Cucumber comparisons"
+  s.summary       = "Build Cucumber-compatible data tables programmatically"
+  s.description   = "Mortadella makes it easy to programmatically build data tables for " \
+                    "Cucumber testing. Supports both horizontal (row-based) and vertical " \
+                    "(key-value) table formats with powerful features like column filtering " \
+                    "and field deduplication."
   s.homepage      = "https://github.com/kevgo/mortadella-ruby"
   s.license       = "MIT"
 
   s.files         = `git ls-files -z`.split("\x0")
   s.require_paths = ["lib"]
   s.required_ruby_version = ">= 2.7"
+
   s.metadata["rubygems_mfa_required"] = "true"
+  s.metadata["homepage_uri"] = s.homepage
+  s.metadata["source_code_uri"] = "https://github.com/kevgo/mortadella-ruby"
+  s.metadata["changelog_uri"] = "https://github.com/kevgo/mortadella-ruby/blob/main/CHANGELOG.md"
+  s.metadata["bug_tracker_uri"] = "https://github.com/kevgo/mortadella-ruby/issues"
 end
