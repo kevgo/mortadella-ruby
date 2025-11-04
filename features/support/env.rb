@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-if ENV["CI"]
-  require "simplecov"
-  SimpleCov.start
+require "simplecov"
+SimpleCov.start do
+  enable_coverage :branch
+  add_filter "/features/"
 end
 
 require "bundler/setup"
