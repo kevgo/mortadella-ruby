@@ -31,5 +31,11 @@ module Mortadella
     def empty?
       @table.empty?
     end
+
+    # Converts the table to a hash.
+    # @return [Hash<String, String>] Hash representation of the table.
+    def to_h
+      @table.to_h
+    end
   end
 end
