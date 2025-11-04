@@ -3,6 +3,10 @@
 ## 1.2.0 (2025-11-04)
 
 - Add ability to hash tables
+- Verify argument types
+- Add YARD type signatures
+- Improved dry-up algorithm
+- Validate the length of added rows
 
 ## 1.1.0 (2016-08-25)
 
